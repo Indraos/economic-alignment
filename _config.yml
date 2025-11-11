@@ -1,8 +1,8 @@
 # Site settings
 title: "Economic of Alignment (EoA) Workshop 2026"
 description: "Connecting microeconomic theory with AI alignment, post-training, and evaluation"
-baseurl: ""
-url: ""
+baseurl: "/economic-alignment"
+url: "https://indraos.github.io"
 
 # Build settings
 markdown: kramdown
