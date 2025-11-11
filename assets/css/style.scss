@@ -1,0 +1,183 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Color scheme - Stanford cardinal with technical aesthetic
+$stanford-cardinal: #8C1515;
+$stanford-dark: #2E2D29;
+$stanford-stone: #544948;
+$primary-color: #1a1a2e;
+$secondary-color: $stanford-dark;
+$accent-color: $stanford-stone;
+$highlight-color: $stanford-cardinal;
+$text-color: #2d2d2d;
+$light-bg: #f8f9fa;
+$code-bg: #0d1117;
+
+// Typography
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  color: $text-color;
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Roboto Mono', monospace;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: $primary-color;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 3px solid $stanford-cardinal;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: $secondary-color;
+  border-left: 5px solid $stanford-cardinal;
+  padding-left: 0.5em;
+  margin-left: -0.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: $accent-color;
+}
+
+// Hero section
+.hero {
+  text-align: center;
+  padding: 4em 2em 3em 2em;
+  background: linear-gradient(135deg, $stanford-cardinal 0%, $stanford-dark 100%);
+  color: white;
+  margin: -2em -2em 2em -2em;
+  border-radius: 0;
+
+  h1, h2 {
+    color: white;
+    border: none;
+    margin-top: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 1.3em;
+    margin: 1em 0;
+    font-weight: 300;
+    opacity: 0.95;
+  }
+
+  .venue {
+    font-family: 'SF Mono', 'Monaco', monospace;
+    font-size: 0.95em;
+    opacity: 0.85;
+    letter-spacing: 0.05em;
+  }
+}
+
+// Content sections
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+// Horizontal rules
+hr {
+  border: none;
+  border-top: 2px solid $stanford-cardinal;
+  margin: 3em 0;
+  opacity: 0.2;
+}
+
+// Links
+a {
+  color: $highlight-color;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-bottom: 1px solid $highlight-color;
+  }
+}
+
+// Strong emphasis on key dates and themes
+strong {
+  color: $primary-color;
+  font-weight: 600;
+}
+
+// Code and technical elements
+code {
+  background: $light-bg;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'SF Mono', 'Monaco', monospace;
+  font-size: 0.9em;
+  color: $accent-color;
+  border: 1px solid #e1e4e8;
+}
+
+// Lists
+ul, ol {
+  line-height: 1.8;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+// Footer
+.footer-note {
+  margin-top: 4em;
+  padding-top: 2em;
+  border-top: 1px solid #e1e4e8;
+  text-align: center;
+  color: #6a737d;
+  font-size: 0.9em;
+}
+
+// Smooth scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .hero {
+    padding: 2em 1em;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+    }
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+// Selection color
+::selection {
+  background: $highlight-color;
+  color: white;
+}

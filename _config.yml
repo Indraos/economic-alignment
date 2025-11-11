@@ -1,0 +1,15 @@
+# Site settings
+title: "Economic of Alignment (EoA) Workshop 2026"
+description: "Connecting microeconomic theory with AI alignment, post-training, and evaluation"
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
