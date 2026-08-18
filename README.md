@@ -1,33 +1,12 @@
-# Economic Alignment Workshop 2026 Website
+# Economic Alignment Workshop 2026 Website (retired)
 
-This is the Jekyll website for the Economic Alignment Workshop at Stanford GSB.
+The Jekyll site for the Economic Alignment Workshop, previously published at
+`https://www.andyhaupt.com/economic-alignment/`, has been removed.
 
-## Local Development
+The site source and its GitHub Pages deploy workflow were deleted in this
+repository; the full content remains in this repository's git history and can
+be restored from the commit preceding the removal.
 
-1. Install Jekyll and dependencies:
-   ```bash
-   bundle install
-   ```
-
-2. Run the local server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-3. Visit `http://localhost:4000` in your browser
-
-## Deployment
-
-This site can be deployed to:
-- GitHub Pages (recommended)
-- Netlify
-- Any static hosting service
-
-## Updating Content
-
-All content is in `index.md`. Edit this file to update workshop information.
-
-## Customization
-
-- Colors and styling: `assets/css/style.scss`
-- Site config: `_config.yml`
+Note: deleting the workflow stops future rebuilds, but the last deployed build
+stays served until GitHub Pages is disabled for this repository under
+Settings -> Pages (set Source to "None").
